@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOLAPAM - Service de Paiement Simple et Sécurisé</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-space">
+                <!-- LOGO SPACE - Insérez votre logo ici -->
+                <div class="logo-placeholder">
+                    <i class="fas fa-coins"></i> SOLAPAM
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#tarifs">Tarifs</a></li>
+                <li><a href="#temoignages">Témoignages</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header id="accueil" class="hero-section">
+        <div class="hero-content">
+            <h1 class="main-title">SOLAPAM</h1>
+            <p class="subtitle">Votre Solution de Paiement Facile et Fiable</p>
+            <p class="description">Gérez vos paiements en toute simplicité et sécurité avec SOLAPAM</p>
+            <button class="cta-button">Commencer Maintenant</button>
+        </div>
+    </header>
+
+    <!-- Progress Section with Cards and Images -->
+    <section id="progression" class="progression-section">
+        <h2>Comment Ça Marche</h2>
+        <div class="progress-container">
+            <div class="progress-step">
+                <div class="step-number">1</div>
+                <div class="step-image">
+                    <i class="fas fa-user-plus"></i>
+                </div>
+                <h3>S'inscrire</h3>
+                <p>Créez votre compte SOLAPAM en quelques secondes</p>
+            </div>
+            <div class="progress-arrow">→</div>
+            <div class="progress-step">
+                <div class="step-number">2</div>
+                <div class="step-image">
+                    <i class="fas fa-wallet"></i>
+                </div>
+                <h3>Ajouter Fonds</h3>
+                <p>Déposez facilement de l'argent sur votre compte</p>
+            </div>
+            <div class="progress-arrow">→</div>
+            <div class="progress-step">
+                <div class="step-number">3</div>
+                <div class="step-image">
+                    <i class="fas fa-credit-card"></i>
+                </div>
+                <h3>Payer</h3>
+                <p>Effectuez vos paiements instantanément</p>
+            </div>
+            <div class="progress-arrow">→</div>
+            <div class="progress-step">
+                <div class="step-number">4</div>
+                <div class="step-image">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h3>Réussir</h3>
+                <p>Profitez de services sans frais cachés</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <h2>Nos Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Paiement Mobile</h3>
+                <p>Payez facilement via votre téléphone portable</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <h3>Sécurité Garantie</h3>
+                <p>Vos données sont protégées par le chiffrement SSL</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+                <h3>Transferts Rapides</h3>
+                <p>Transférez de l'argent instantanément</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3>Support 24/7</h3>
+                <p>Notre équipe est toujours là pour vous aider</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Suivi en Temps Réel</h3>
+                <p>Consultez vos transactions à tout moment</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3>Services Internationaux</h3>
+                <p>Envoyez de l'argent partout dans le monde</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Money & Packages Section -->
+    <section id="argent" class="money-section">
+        <h2>Gestion de Votre Argent</h2>
+        <div class="money-features">
+            <div class="money-card">
+                <i class="fas fa-wallet"></i>
+                <h3>Soldes Multiples</h3>
+                <p>Gérez plusieurs devises dans un seul compte</p>
+            </div>
+            <div class="money-card">
+                <i class="fas fa-piggy-bank"></i>
+                <h3>Épargne Intelligente</h3>
+                <p>Économisez et gagnez des intérêts</p>
+            </div>
+            <div class="money-card">
+                <i class="fas fa-percent"></i>
+                <h3>Taux Compétitifs</h3>
+                <p>Les meilleurs taux du marché pour vous</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="tarifs" class="pricing-section">
+        <h2>Nos Forfaits</h2>
+        <p class="pricing-intro">Choisissez le forfait qui vous convient le mieux</p>
+        
+        <div class="pricing-grid">
+            <!-- $2 Package -->
+            <div class="pricing-card starter">
+                <div class="package-name">Starter</div>
+                <div class="price">
+                    <span class="currency">$</span>
+                    <span class="amount">2</span>
+                </div>
+                <p class="package-desc">Parfait pour débuter</p>
+                <ul class="features-list">
+                    <li><i class="fas fa-check"></i> 5 transactions/mois</li>
+                    <li><i class="fas fa-check"></i> Support email</li>
+                    <li><i class="fas fa-times"></i> Pas de limite de montant</li>
+                </ul>
+                <button class="package-btn">Choisir</button>
+            </div>
+
+            <!-- $4 Package -->
+            <div class="pricing-card basic">
+                <div class="package-name">Basic</div>
+                <div class="price">
+                    <span class="currency">$</span>
+                    <span class="amount">4</span>
+                </div>
+                <p class="package-desc">Pour les petits commerces</p>
+                <ul class="features-list">
+                    <li><i class="fas fa-check"></i> 25 transactions/mois</li>
+                    <li><i class="fas fa-check"></i> Support téléphone</li>
+                    <li><i class="fas fa-check"></i> Limite de $500</li>
+                </ul>
+                <button class="package-btn">Choisir</button>
+            </div>
+
+            <!-- $6 Package -->
+            <div class="pricing-card professional">
+                <div class="package-name">Professional</div>
+                <div class="price">
+                    <span class="currency">$</span>
+                    <span class="amount">6</span>
+                </div>
+                <p class="package-desc">Pour les professionnels</p>
+                <ul class="features-list">
+                    <li><i class="fas fa-check"></i> 100 transactions/mois</li>
+                    <li><i class="fas fa-check"></i> Support prioritaire</li>
+                    <li><i class="fas fa-check"></i> Limite de $2000</li>
+                </ul>
+                <button class="package-btn">Choisir</button>
+            </div>
+
+            <!-- $8 Package -->
+            <div class="pricing-card business">
+                <div class="package-name">Business</div>
+                <div class="price">
+                    <span class="currency">$</span>
+                    <span class="amount">8</span>
+                </div>
+                <p class="package-desc">Pour les entreprises</p>
+                <ul class="features-list">
+                    <li><i class="fas fa-check"></i> 500 transactions/mois</li>
+                    <li><i class="fas fa-check"></i> Support VIP 24/7</li>
+                    <li><i class="fas fa-check"></i> Limite de $10,000</li>
+                </ul>
+                <button class="package-btn">Choisir</button>
+            </div>
+
+            <!-- $10 Package -->
+            <div class="pricing-card premium">
+                <div class="package-name">Premium</div>
+                <div class="badge">Populaire</div>
+                <div class="price">
+                    <span class="currency">$</span>
+                    <span class="amount">10</span>
+                </div>
+                <p class="package-desc">Pour les grandes organisations</p>
+                <ul class="features-list">
+                    <li><i class="fas fa-check"></i> Transactions illimitées</li>
+                    <li><i class="fas fa-check"></i> Compte manager dédié</li>
+                    <li><i class="fas fa-check"></i> Pas de limite de montant</li>
+                </ul>
+                <button class="package-btn">Choisir</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation System Section -->
+    <section id="reservation" class="reservation-section">
+        <h2>Système de Réservation</h2>
+        <div class="reservation-container">
+            <div class="reservation-card">
+                <h3>Réservez Votre Créneau</h3>
+                <form class="reservation-form">
+                    <input type="text" placeholder="Votre nom complet" required>
+                    <input type="email" placeholder="Votre adresse email" required>
+                    <input type="tel" placeholder="Votre numéro de téléphone" required>
+                    <select required>
+                        <option value="">Choisissez une date</option>
+                        <option value="2026-07-20">20 Juillet 2026</option>
+                        <option value="2026-07-21">21 Juillet 2026</option>
+                        <option value="2026-07-22">22 Juillet 2026</option>
+                    </select>
+                    <select required>
+                        <option value="">Choisissez un créneau horaire</option>
+                        <option value="09:00">09:00 - 10:00</option>
+                        <option value="10:30">10:30 - 11:30</option>
+                        <option value="14:00">14:00 - 15:00</option>
+                        <option value="15:30">15:30 - 16:30</option>
+                    </select>
+                    <select required>
+                        <option value="">Choisissez un service</option>
+                        <option value="consultation">Consultation Gratuite</option>
+                        <option value="demo">Démonstration du Service</option>
+                        <option value="setup">Configuration du Compte</option>
+                    </select>
+                    <button type="submit" class="submit-btn">Réserver Maintenant</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="temoignages" class="testimonials-section">
+        <h2>Témoignages de Nos Clients</h2>
+        <p class="testimonials-intro">Ce que nos clients et propriétaires SOLAPAM disent de nous</p>
+        
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">"SOLAPAM a transformé ma façon de gérer mes finances. Facile, rapide et fiable!"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">JM</div>
+                    <div class="author-info">
+                        <p class="author-name">Jean-Marie Dupont</p>
+                        <p class="author-title">Propriétaire SOLAPAM</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">"Meilleur service de paiement que j'ai jamais utilisé. Support excellent et tarifs transparents."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">MR</div>
+                    <div class="author-info">
+                        <p class="author-name">Marie Rossi</p>
+                        <p class="author-title">Propriétaire SOLAPAM</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">"La sécurité et la facilité d'utilisation sont au rendez-vous. Je recommande SOLAPAM à tous mes amis."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">PL</div>
+                    <div class="author-info">
+                        <p class="author-name">Pierre Laurent</p>
+                        <p class="author-title">Propriétaire SOLAPAM</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">"Depuis que j'utilise SOLAPAM, j'ai augmenté mes transactions de 300%. Incroyable!"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">SB</div>
+                    <div class="author-info">
+                        <p class="author-name">Sophie Bernard</p>
+                        <p class="author-title">Propriétaire SOLAPAM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer/Task Bar -->
+    <footer class="footer-taskbar" id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>À Propos de SOLAPAM</h4>
+                <p>SOLAPAM est la solution de paiement la plus fiable, facile à utiliser et sécurisée du marché.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Liens Rapides</h4>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#tarifs">Tarifs</a></li>
+                    <li><a href="#temoignages">Témoignages</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p><i class="fas fa-envelope"></i> Email: info@solapam.com</p>
+                <p><i class="fas fa-phone"></i> Téléphone: +1 (555) 123-4567</p>
+                <p><i class="fas fa-map-marker-alt"></i> Adresse: 123 Rue des Services, Ville, 75001</p>
+            </div>
+            <div class="footer-section">
+                <h4>Suivez-nous</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 SOLAPAM. Tous droits réservés. | Politique de confidentialité | Conditions d'utilisation</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
