@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - SOLAPAM</title>
+    <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="auth-container">
+        <!-- Left Side - Branding -->
+        <div class="auth-left">
+            <div class="brand-content">
+                <div class="brand-logo">
+                    <i class="fas fa-coins"></i>
+                </div>
+                <h1>SOLAPAM</h1>
+                <p>Votre Solution de Paiement Simple et Fiable</p>
+                <div class="features-list">
+                    <div class="feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Sécurité Garantie</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-lightning-bolt"></i>
+                        <span>Transactions Rapides</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-headset"></i>
+                        <span>Support 24/7</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side - Registration Form -->
+        <div class="auth-right">
+            <div class="form-container">
+                <h2>Créer un Compte</h2>
+                <p class="form-subtitle">Rejoignez SOLAPAM aujourd'hui</p>
+
+                <!-- Registration Form -->
+                <form id="registrationForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="fullName">Nom Complet</label>
+                        <div class="input-group">
+                            <i class="fas fa-user"></i>
+                            <input 
+                                type="text" 
+                                id="fullName" 
+                                name="fullName" 
+                                placeholder="Jean Dupont"
+                                required
+                            >
+                        </div>
+                        <span class="error-message" id="fullNameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Adresse Email</label>
+                        <div class="input-group">
+                            <i class="fas fa-envelope"></i>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                placeholder="votre@email.com"
+                                required
+                            >
+                        </div>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Numéro de Téléphone</label>
+                        <div class="input-group">
+                            <i class="fas fa-phone"></i>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone" 
+                                placeholder="+1 (555) 123-4567"
+                                required
+                            >
+                        </div>
+                        <span class="error-message" id="phoneError"></span>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="password">Mot de Passe</label>
+                            <div class="input-group password-input">
+                                <i class="fas fa-lock"></i>
+                                <input 
+                                    type="password" 
+                                    id="password" 
+                                    name="password" 
+                                    placeholder="••••••••"
+                                    required
+                                >
+                                <i class="fas fa-eye toggle-password" onclick="togglePassword('password')"></i>
+                            </div>
+                            <span class="error-message" id="passwordError"></span>
+                            <div class="password-strength">
+                                <div class="strength-bar" id="strengthBar"></div>
+                                <span class="strength-text" id="strengthText">Faible</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirmer le Mot de Passe</label>
+                            <div class="input-group password-input">
+                                <i class="fas fa-lock"></i>
+                                <input 
+                                    type="password" 
+                                    id="confirmPassword" 
+                                    name="confirmPassword" 
+                                    placeholder="••••••••"
+                                    required
+                                >
+                                <i class="fas fa-eye toggle-password" onclick="togglePassword('confirmPassword')"></i>
+                            </div>
+                            <span class="error-message" id="confirmPasswordError"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <input 
+                            type="checkbox" 
+                            id="terms" 
+                            name="terms"
+                            required
+                        >
+                        <label for="terms">
+                            J'accepte les <a href="#" class="link">conditions d'utilisation</a> et la <a href="#" class="link">politique de confidentialité</a>
+                        </label>
+                        <span class="error-message" id="termsError"></span>
+                    </div>
+
+                    <button type="submit" class="btn-primary">
+                        <i class="fas fa-user-check"></i> Créer un Compte
+                    </button>
+                </form>
+
+                <!-- Divider -->
+                <div class="divider">
+                    <span>Ou inscrivez-vous avec</span>
+                </div>
+
+                <!-- Social Sign-up -->
+                <div class="social-auth">
+                    <button type="button" class="btn-google" onclick="signUpWithGoogle()">
+                        <i class="fab fa-google"></i> Google
+                    </button>
+                    <button type="button" class="btn-facebook" onclick="signUpWithFacebook()">
+                        <i class="fab fa-facebook"></i> Facebook
+                    </button>
+                </div>
+
+                <!-- Login Link -->
+                <p class="auth-footer">
+                    Vous avez déjà un compte? 
+                    <a href="login.html" class="link">Se connecter</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Compte Créé avec Succès!</h3>
+            <p>Bienvenue sur SOLAPAM. Vous allez être redirigé...</p>
+        </div>
+    </div>
+
+    <!-- Error Modal -->
+    <div id="errorModal" class="modal">
+        <div class="modal-content error">
+            <div class="error-icon">
+                <i class="fas fa-exclamation-circle"></i>
+            </div>
+            <h3 id="errorTitle">Erreur</h3>
+            <p id="errorMessage"></p>
+            <button onclick="closeErrorModal()" class="btn-secondary">Fermer</button>
+        </div>
+    </div>
+
+    <!-- Google Sign-In Script -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="auth.js"></script>
+</body>
+</html>
